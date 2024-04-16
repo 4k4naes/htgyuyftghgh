@@ -39,6 +39,14 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'index.html'));
 });
 
+app.get('/card', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'card.html'));
+});
+
+app.get('/item', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'item.html'));
+});
+
 app.listen(3000, () => {
   console.log(`http://localhost:3000`);
 });

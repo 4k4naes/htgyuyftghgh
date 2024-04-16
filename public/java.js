@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
-
 console.log(produkty);
 
 function generujElementHTML() {
@@ -63,9 +61,6 @@ function generujElementHTML() {
 // Generowanie i wyświetlanie elementu HTML
 const produktydiv = document.getElementById('produktydiv');
 produktydiv.innerHTML += generujElementHTML();
-
-
-
 
 function generujElementHTML2() {
     let html = '';
