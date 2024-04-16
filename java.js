@@ -22,12 +22,6 @@ const produkty = [
 ];
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    if (window.location.pathname === "/index.html") {
-        console.log("chuj")
-    }
-});
-
 
 
 console.log(produkty);
@@ -60,10 +54,6 @@ function generujElementHTML() {
     return html;
 }
 
-// Generowanie i wyświetlanie elementu HTML
-const produktydiv = document.getElementById('produktydiv');
-produktydiv.innerHTML += generujElementHTML();
-
 
 
 
@@ -88,10 +78,6 @@ function generujElementHTML2() {
     html += `</div>`
     return html;
 }
-
-
-const nowoscidiv = document.getElementById('nowoscidiv');
-nowoscidiv.innerHTML += generujElementHTML2();
 
 
 function displayItem(id) {
