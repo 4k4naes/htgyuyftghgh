@@ -58,10 +58,6 @@ function generujElementHTML() {
     return html;
 }
 
-// Generowanie i wyświetlanie elementu HTML
-const produktydiv = document.getElementById('produktydiv');
-produktydiv.innerHTML += generujElementHTML();
-
 function generujElementHTML2() {
     let html = '';
     html += `<div class="row">`
@@ -83,11 +79,6 @@ function generujElementHTML2() {
     html += `</div>`
     return html;
 }
-
-
-const nowoscidiv = document.getElementById('nowoscidiv');
-nowoscidiv.innerHTML += generujElementHTML2();
-
 
 function displayItem(id) {
     console.log(`Wybrany produkt o id: ${id}`);

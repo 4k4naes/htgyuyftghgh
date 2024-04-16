@@ -44,7 +44,7 @@ const produkty = [
 // Dodawanie danych do bazy
 async function addProductsToDB() {
     try {
-        await mongoose.connect('mongodb://localhost:27017/twoja_baza', { useNewUrlParser: true, useUnifiedTopology: true });
+        await mongoose.connect('mongodb+srv://kacper:a7p9BUWadhIP95ep@dev.weptkkk.mongodb.net/sklep', { useNewUrlParser: true, useUnifiedTopology: true });
 
         for (let i = 0; i < produkty.length; i++) {
             const produkt = produkty[i];
