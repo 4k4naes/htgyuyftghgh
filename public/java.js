@@ -21,13 +21,6 @@ const produkty = [
     // [19, 'Hamak do klatki chomika', 'Wygodny hamak z miękkim wypełnieniem', 'Hamak do klatki chomika z miękkim wypełnieniem, zapewnia przyjemne miejsce do spania i relaksu', 4.99, 'hamak_chomik.jpg', 22, 2, 8]
 ];
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    if (window.location.pathname === "/index.html") {
-        console.log("chuj")
-    }
-});
-
 console.log(produkty);
 
 function generujElementHTML() {
