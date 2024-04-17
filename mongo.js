@@ -31,14 +31,14 @@ const produkty = [
     [9, 'Pilnik do pazurków dla kota', 'Pilnik z miękkim uchwytem', 'Pilnik do pazurków dla kota z miękkim uchwytem, zapobiega nadmiernemu ścieraniu pazurków', 4.50, 'produkt10.png', 30, 4, 6],
     [10, 'Wkładka do klatek chomika', 'Wkładka higieniczna z chłonnym wkładem', 'Wkładka do klatek chomika z chłonnym wkładem, zapewnia czystość i higienę', 6.50, 'produkt11.png', 15, 5, 8],
     [11, 'Karma mokra dla kota', 'Karma w puszce z kawałkami mięsa', 'Karma mokra dla kota w puszce z kawałkami mięsa, bogata w witaminy i minerały', 1.99, 'produkt12.png', 25, 5, 6],
-    // [12, 'Piłka treningowa dla psa', 'Gumowa piłka do ćwiczeń', 'Piłka treningowa dla psa wykonana z gumy, idealna do nauki apportu i aktywności', 3.50, 'pilka_pies_trening.jpg', 20, 2, 7],
-    // [13, 'Klatka dla chomika', 'Metalowa klatka z hamakiem', 'Metalowa klatka dla chomika z hamakiem, stworzona dla komfortowego życia i zabawy', 32.50, 'klatka_chomik_metalowa.jpg', 12, 5, 8],
-    // [14, 'Zestaw przysmaków dla psa', 'Miks smakołyków dla psa', 'Zestaw przysmaków dla psa w różnych smakach, idealny jako nagroda lub przekąska', 9.99, 'przysmaki_pies.jpg', 18, 4, 7],
-    // [15, 'Stojak na klatki ptaków', 'Składany stojak z regulacją wysokości', 'Stojak na klatki ptaków składany z regulacją wysokości, ułatwia obsługę i czyszczenie', 17.50, 'stojak_klatki_ptaki.jpg', 8, 3, 9],
-    // [16, 'Karmnik na balkon dla ptaków', 'Zawieszany karmnik z daszkiem', 'Karmnik na balkon dla ptaków zawieszany z daszkiem, przyciąga ptaki do domu i ogródka', 6.99, 'karmnik_balkon_ptaki.jpg', 30, 3, 9],
-    // [17, 'Zestaw roślin do terrarium', 'Wybór roślin ozdobnych', 'Zestaw roślin do terrarium z wyborem ozdobnych gatunków, tworzy przyjemną atmosferę dla zwierzątek', 11.99, 'rosliny_terarium.jpg', 10, 10, 11],
-    // [18, 'Pianka do stylizacji futra kota', 'Pianka z kolagenem i olejami', 'Pianka do stylizacji futra kota z dodatkiem kolagenu i olejków, pielęgnuje i nawilża sierść', 6.50, 'pianka_kot.jpg', 15, 5, 6],
-    // [19, 'Hamak do klatki chomika', 'Wygodny hamak z miękkim wypełnieniem', 'Hamak do klatki chomika z miękkim wypełnieniem, zapewnia przyjemne miejsce do spania i relaksu', 4.99, 'hamak_chomik.jpg', 22, 2, 8]
+    [12, 'Piłka treningowa dla psa', 'Gumowa piłka do ćwiczeń', 'Piłka treningowa dla psa wykonana z gumy, idealna do nauki apportu i aktywności', 3.50, 'pilka_pies_trening.jpg', 20, 2, 7],
+    [13, 'Klatka dla chomika', 'Metalowa klatka z hamakiem', 'Metalowa klatka dla chomika z hamakiem, stworzona dla komfortowego życia i zabawy', 32.50, 'klatka_chomik_metalowa.jpg', 12, 5, 8],
+    [14, 'Zestaw przysmaków dla psa', 'Miks smakołyków dla psa', 'Zestaw przysmaków dla psa w różnych smakach, idealny jako nagroda lub przekąska', 9.99, 'przysmaki_pies.jpg', 18, 4, 7],
+    [15, 'Stojak na klatki ptaków', 'Składany stojak z regulacją wysokości', 'Stojak na klatki ptaków składany z regulacją wysokości, ułatwia obsługę i czyszczenie', 17.50, 'stojak_klatki_ptaki.jpg', 8, 3, 9],
+    [16, 'Karmnik na balkon dla ptaków', 'Zawieszany karmnik z daszkiem', 'Karmnik na balkon dla ptaków zawieszany z daszkiem, przyciąga ptaki do domu i ogródka', 6.99, 'karmnik_balkon_ptaki.jpg', 30, 3, 9],
+    [17, 'Zestaw roślin do terrarium', 'Wybór roślin ozdobnych', 'Zestaw roślin do terrarium z wyborem ozdobnych gatunków, tworzy przyjemną atmosferę dla zwierzątek', 11.99, 'rosliny_terarium.jpg', 10, 10, 11],
+    [18, 'Pianka do stylizacji futra kota', 'Pianka z kolagenem i olejami', 'Pianka do stylizacji futra kota z dodatkiem kolagenu i olejków, pielęgnuje i nawilża sierść', 6.50, 'pianka_kot.jpg', 15, 5, 6],
+    [19, 'Hamak do klatki chomika', 'Wygodny hamak z miękkim wypełnieniem', 'Hamak do klatki chomika z miękkim wypełnieniem, zapewnia przyjemne miejsce do spania i relaksu', 4.99, 'hamak_chomik.jpg', 22, 2, 8]
 ];
 
 // Dodawanie danych do bazy
