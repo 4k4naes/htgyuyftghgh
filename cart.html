@@ -22,10 +22,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="index.html">Główna</a>
+                  </li>
+                <li class="nav-item">
                   <a class="nav-link" href="cart.html">Koszyk<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sklepy</a>
+                  <a class="nav-link" href="shops.html">Sklepy</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -35,9 +38,12 @@
                     <a class="dropdown-item" href="#">Kategorie</a>
                     <a class="dropdown-item" href="#">Ostatnie sztuki</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Kontakt</a>
+                    <a class="dropdown-item" href="contact.html">Kontakt</a>
                   </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">O nas</a>
+                  </li>
               </ul>
               <form class="d-flex">
                 <input class="px-2 search" type="search" placeholder="   Kocie przysmaki..." aria-label="Search">
@@ -51,31 +57,66 @@
 
         <section class="cart">
             <div class="container py-5">
-                <div class="row py-4">
+                <div class="row py-4 mx-2">
                     <h1>Twój koszyk</h1>
                 </div>
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <img src="./img/produkt1.png" alt="" style="height: 100px;">
+                <div class="row mx-2">
+                    <div class="col-lg-8">
+                        <div id="produktywkoszyku">
+
+
+                            <!-- <div class="produkcik">
+                                <div class="row produktwkoszyku" id="produktwkoszyku">
+                                    <div class="col-lg-2 pt-2">
+                                        <img src="./img/produkt1.png" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="col-lg-5 p-2">
+                                        <h6>HUAWEI P SMART 2019 POT-LX3 ładny</h6>
+                                        <p>Stan używany | Stan opakowania zastępcze</p>
+                                    </div>
+                                    <div class="counter col-lg-3 d-flex justify-content-center align-items-center">
+                                        <button id="minus">-</button>
+                                        <button id="number">1</button>
+                                        <button id="plus">+</button>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="row d-flex justify-content-end">
+                                            <h2>99.99zł</h2>
+                                        </div>
+                                        <div class="row d-flex justify-content-end align-items-center">
+                                            <button class="btn4"><img src="./img/kosz.png" style="height: 50px;"></button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-5">
-                                <h6>HUAWEI P SMART 2019 POT-LX3 ładny</h6>
-                                <p>Stan używany | Stan opakowania zastępcze</p>
-                            </div>
-                            <div class="col-lg-2 col-sm-12 d-flex justify-content-between">
-                                <button id="minus">-</button>
-                                <div id="number">5</div>
-                                <button id="plus">+</button>
-                            </div>
-                            <div class="col-lg-2">
-                                <h1>99.99zł</h1>
-                            </div>
-                            <div class="col-lg-1">
-                                <img src="./img/p2.png" alt="" style="height: 20px;">
-                            </div>
+                            
+
+
+                            
+                            <div class="row produktwkoszyku mt-3" id="produktwkoszyku">
+                                <div class="col-lg-2 pt-2">
+                                    <img src="./img/produkt1.png" alt="" style="width: 100%;">
+                                </div>
+                                <div class="col-lg-5 p-2">
+                                    <h6>HUAWEI P SMART 2019 POT-LX3 ładny</h6>
+                                    <p>Stan używany | Stan opakowania zastępcze</p>
+                                </div>
+                                <div class="counter col-lg-3 d-flex justify-content-center align-items-center">
+                                    <button id="minus">-</button>
+                                    <button id="number">1</button>
+                                    <button id="plus">+</button>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="row d-flex justify-content-end">
+                                        <h2>99.99zł</h2>
+                                    </div>
+                                    <div class="row d-flex justify-content-end align-items-center">
+                                        <button class="btn4"><img src="./img/kosz.png" style="height: 50px;"></button>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
+                        
                     </div>
                     <div class="col-lg-5">
     
@@ -201,7 +242,12 @@
 
 
 
+        <script src="java.js"></script>
 
+        <script>
+            const produktywkoszyku = document.getElementById('produktywkoszyku');
+            produktywkoszyku.innerHTML += displayCartContent();
+        </script>        
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
