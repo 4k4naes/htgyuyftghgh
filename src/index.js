@@ -2,7 +2,7 @@ import database from "./database.js";
 import express from "express";
 import path from "path";
 
-const port = 8000;
+const port = 3000;
 
 database.init();
 const app = express();
