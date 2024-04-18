@@ -1,5 +1,15 @@
 {
+  "name": "htgyuyftghgh",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
   "dependencies": {
-    "mongoose": "^8.3.2"
+    "better-sqlite3": "^9.5.0",
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "prettier": "^3.2.5"
   }
 }
