@@ -221,6 +221,7 @@ const produkty = [
   ],
 ];
 
+
 function generujElementHTML() {
   let html = "";
   let x = -1;
@@ -289,9 +290,9 @@ function displayCartContent() {
                         <p>${produkty[id][2]}</p>
                     </div>
                     <div class="counter col-lg-3 d-flex justify-content-center align-items-center">
-                        <button id="minus">-</button>
-                        <button id="number">${item[1]}</button>
-                        <button id="plus">+</button>
+                        <button id="minus" onClick="itemCounterCart(false)">-</button>
+                        <button id="numberCart">${item[1]}</button>
+                        <button id="plus" onClick="itemCounterCart(true)">+</button>
                     </div>
                     <div class="col-lg-2">
                         <div class="row d-flex justify-content-end">
@@ -306,6 +307,13 @@ function displayCartContent() {
         `;
   }
   return html;
+}
+
+let nmbc = 1;
+function itemCounterCart(count) {
+  nmbc += count ? 1 : -1;
+  console.log(nmbc)
+  document.getElementById("numberCart").innerHTML = nmbc;
 }
 
 function displayItem(id) {
@@ -378,11 +386,7 @@ function getItem() {
 
 let nmb = 1;
 function itemCounter(count) {
-  if (count) {
-    nmb++;
-  } else {
-    nmb--;
-  }
+  nmb += count ? 1 : -1;
 
   document.getElementById("number").innerHTML = nmb;
 }
