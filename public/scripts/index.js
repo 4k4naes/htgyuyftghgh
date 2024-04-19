@@ -1,3 +1,4 @@
+// localStorage.removeItem('cart');
 const produkty = [
   [
     0,
@@ -290,9 +291,9 @@ function displayCartContent() {
                         <p>${produkty[id][2]}</p>
                     </div>
                     <div class="counter col-lg-3 d-flex justify-content-center align-items-center">
-                        <button id="minus" onClick="itemCounterCart(false)">-</button>
+                        <button id="minus" onClick="itemCounterCart(false, id)">-</button>
                         <button id="numberCart">${item[1]}</button>
-                        <button id="plus" onClick="itemCounterCart(true)">+</button>
+                        <button id="plus" onClick="itemCounterCart(true, id)">+</button>
                     </div>
                     <div class="col-lg-2">
                         <div class="row d-flex justify-content-end">
@@ -309,11 +310,11 @@ function displayCartContent() {
   return html;
 }
 
-let nmbc = 1;
-function itemCounterCart(count) {
+function itemCounterCart(count, id) {
+  let nmbc = cart[id];
   nmbc += count ? 1 : -1;
+  cart[id] = nmbc;
   console.log(nmbc)
-  document.getElementById("numberCart").innerHTML = nmbc;
 }
 
 function displayItem(id) {
