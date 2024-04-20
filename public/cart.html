@@ -56,8 +56,8 @@
               Więcej
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Kategorie</a>
-              <a class="dropdown-item" href="#">Ostatnie sztuki</a>
+              <a class="dropdown-item disabled" href="#">Kategorie</a>
+              <a class="dropdown-item disabled" href="#">Ostatnie sztuki</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="contact.html">Kontakt</a>
             </div>
@@ -80,6 +80,14 @@
 
     <section class="cart">
       <div class="container py-5">
+        <div class="row">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Ważne!</strong> Ta podstrona jest aktualnie nieobslugiwana w pełni. 
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
         <div class="row py-4 mx-2">
           <h1>Twój koszyk</h1>
         </div>
@@ -170,7 +178,7 @@
               Odblokuj potencjał swojego pupila dzięki naszym produktom
             </h1>
             <h6>Złączeni z pasji</h6>
-            <button class="btn1 mt-3">Więcej od Nas</button>
+            <a href="shops.html"><button class="btn1 mt-3">Więcej od Nas</button></a>
           </div>
         </div>
       </div>
