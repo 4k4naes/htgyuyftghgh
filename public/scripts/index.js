@@ -223,6 +223,22 @@ const produkty = [
 ];
 
 
+
+// (1, 'Jedzenie'),
+// (2, 'Zabawki'),
+// (3, 'Zdrowe'),
+// (4, 'Przysmaki'),
+// (5, 'Dla małych'),
+// (6, 'Koty'),
+// (7, 'Psy'),
+// (8, 'Gryzonie'),
+// (9, 'Ptaki'),
+// (10, 'Inne'),
+// (11, 'Terarria i dodatki'),
+// (12, 'Ryby'),
+// (13, 'Smycze i Kagańce');
+
+
 function generujElementHTML() {
   let html = "";
   let x = -1;
@@ -406,4 +422,50 @@ function addToCart(id) {
 
   localStorage.setItem("cart", JSON.stringify(cart));
   console.log(cart);
+}
+
+
+function activate(category){
+  const categories = document.getElementById("categories");
+  categories.innerHTML = displayall(category);
+}
+
+fulltems = []
+
+function displayall(category){
+  container = document.getElementById("categories");
+
+  items = 0
+
+  for(let i = 0; i < produkty.length; i++){
+    if(produkty[i][7] == category || produkty[i][8] == category){
+      items++;
+      fulltems.push(produkty[i])
+    }
+  }
+
+  let x = 0;
+  html = "";
+  for (let k = 0; k < items/4; k++) {
+    html += `<div class="row">`;
+    for (let i = 0; i < 4; i++) {
+      x++;
+      html += `
+                        <div class="col-lg-3 text-center">
+                            <button class="product-button" id="btn3" onclick="displayItem('${produkty[x][2]}')"> 
+                                <div class="card border-0 bg-light mb-2">
+                                    <div class="card-body">
+                                        <img src="./img/${fulltems[x][5]}" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <h6>${fulltems[x][1]}</h6>
+                                <p>${fulltems[x][4]}zł</p>
+                            </button>
+                        </div>
+                `;
+    }
+    html += `</div>`;
+  }
+
+  return html;
 }
