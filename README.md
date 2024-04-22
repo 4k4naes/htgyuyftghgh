@@ -24,3 +24,46 @@ git clone https://github.com/4k4naes/pet-shop
 
 #
 Thank you for your interest in the Pet Shop website. Happy shopping for your beloved pets! 🐾🐶🐱
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+## Key Functions
+
+### `generateHTMLElement()`
+Generates HTML code for product elements on the page.
+
+### `generateHTMLElement2()`
+Generates a second type of HTML code for product elements on the page.
+
+### `displayCartContent()`
+Displays the contents of the shopping cart, allowing for editing the quantity of products.
+
+#### `itemCounterCart(count, id)`
+Reflects changes in the quantity of products in the cart.
+
+### `displayItem(id)`
+Displays details of the selected product and redirects to a separate page.
+
+### `getItem()`
+Generates HTML code for the details of the selected product.
+
+### `itemCounter(count)`
+Handles the quantity counter of products on the product page.
+
+### `addToCart(id)`
+Adds a product to the shopping cart.
+
+### `activate(category)`
+Activates the visibility of products from a specific category.
+
+### `displayAll(category)`
+Generates HTML code for the display of products from a specific category.
+
+## Database
+The database is defined in the form of a list matrix (array list within an array list) with information about products.
+
+## Security
+Due to the frontend-focused nature of the project, the website does not include payment sections or more complex security measures.
